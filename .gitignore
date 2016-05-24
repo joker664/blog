@@ -1,0 +1,13 @@
+### Set by xudong huang
+*.pyc
+*.db
+*.sqlite3
+
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
