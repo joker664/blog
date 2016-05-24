@@ -22,5 +22,6 @@ urlpatterns = patterns('',
                        (r'^$', 'blogpost.views.index'),
                        url(r'^blog/(?P<slug>[^\.]+).html', 'blogpost.views.view_post', name='view_blog_post'),
                        url(r'^pages/', include('django.contrib.flatpages.urls')),
+                       url(r'^comments/', include('django_comments.urls')),
                        url(r'^admin/', include(admin.site.urls))
                        ) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
