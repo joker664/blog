@@ -2,6 +2,9 @@
 {% block title %}Welcome to my blog{% endblock %}
 
 {% block content %}
+    <li>
+        <a href="/pages/about">简历</a>
+    </li>
 <h1>Posts</h1>
 {% for post in posts %}
 <h2><a href="{{ post.get_absolute_url }}">{{ post.title }}</a></h2>
